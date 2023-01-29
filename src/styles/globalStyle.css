@@ -1,6 +1,10 @@
 :root {
   --HeaderColor: #0e0e12;
   --HeaderButtonColor: #788ca0;
+  --TextColorMedium: #788ca0;
+  --ButtonTextColor: #0e0e12;
+  --HoverColorPrimary:#F40051;
+  --HoverColorSecondary: #788ca0;
 }
 
 body {
