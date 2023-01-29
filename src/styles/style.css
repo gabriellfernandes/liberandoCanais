@@ -1,0 +1,139 @@
+/* Header */
+/* Header desktop */
+.containerHeader {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+  background-color: var(--HeaderColor);
+  height: 75px;
+}
+
+.containerHeader > .containerHeader__logo {
+  width: 180px;
+  height: auto;
+}
+
+.containerButton {
+  display: flex;
+  gap: 30px;
+}
+
+.containerButton__buttonLink,
+.containerItens__buttonLink {
+  cursor: pointer;
+  display: flex;
+  border: none;
+  padding: 0.75rem 1rem;
+  transition: color 200ms ease-out;
+  color: var(--HeaderButtonColor);
+  background-color: transparent;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.containerButton__buttonLink:hover,
+.containerItens__buttonLink:hover {
+  color: white;
+  border-color: white;
+}
+
+.borderEnabled {
+  border: 1px solid var(--HeaderButtonColor);
+  border-radius: 0.5rem;
+  width: 120px;
+}
+
+/* Header Mobile */
+.mobileHeader {
+  position: fixed;
+  z-index: 2;
+  display: none;
+}
+
+.containerHeader__burgerIcon > svg {
+  color: gray;
+  width: auto;
+  height: 45px;
+}
+
+@keyframes headerMobileAnimeEnter {
+  from {
+    top: -90px;
+  }
+  to {
+    top: 75px;
+  }
+}
+
+@keyframes headerMobileAnimeLeave {
+  from {
+    display: flex;
+    top: 75px;
+  }
+  to {
+    top: -90px;
+    display: none;
+  }
+}
+
+.containerItens {
+  position: fixed;
+  flex-direction: column;
+  padding-left: 20px;
+  width: 100%;
+  left: 0px;
+  background-color: var(--HeaderColor);
+  animation-name: headerMobileAnimeEnter;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  z-index: 1;
+  padding-bottom: 1rem;
+  gap: 10px;
+  border-bottom: 1px solid rgba(120, 140, 160, 0.4);
+}
+
+.hidden {
+  display: none;
+}
+
+.containerItensClose {
+  animation-name: headerMobileAnimeLeave;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+@media (max-width: 768px) {
+  .desktopHeader {
+    display: none;
+  }
+
+  .mobileHeader {
+    display: flex;
+  }
+}
+
+/* Main */
+
+.background-shape-left {
+  position: absolute;
+  left: 0%;
+  top: -10rem;
+  right: auto;
+  bottom: auto;
+  z-index: -1;
+  max-width: 50%;
+}
+
+.background-shape-rigth {
+  position: absolute;
+  left: auto;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  z-index: -1;
+  max-width: 60%;
+}
