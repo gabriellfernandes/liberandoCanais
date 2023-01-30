@@ -36,13 +36,12 @@ document.addEventListener("DOMContentLoaded", () => {
   let actualValue = 0;
   const moviesCarousel = document.getElementById("moviesCarousel");
   const childs = document.getElementsByClassName("movieSlide");
-
   setInterval(() => {
     moviesCarousel.removeChild(childs[0]);
 
     moviesCarousel.innerHTML += images[actualValue];
     actualValue++;
-    if (actualValue > 9) {
+    if (actualValue > childs.length - 1) {
       actualValue = 0;
     }
   }, 4000);
