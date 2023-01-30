@@ -32,6 +32,7 @@
   display: flex;
   border: none;
   padding: 0.75rem 1rem;
+  text-align: center;
   transition: color 200ms ease-out;
   color: var(--HeaderButtonColor);
   background-color: transparent;
@@ -49,6 +50,7 @@
   border: 1px solid var(--HeaderButtonColor);
   border-radius: 0.5rem;
   width: 120px;
+  text-align: center;
 }
 
 /* Header Mobile */
@@ -224,6 +226,7 @@
   width: 80%;
   margin: 0 auto;
   margin-top: 800px;
+  margin-bottom: 200px;
 }
 
 .containarPlans__items {
@@ -330,7 +333,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  height: 900px;
+  min-height: 950px;
+  height: auto;
 }
 
 .containerBenefits__list > .containerBenefits {
@@ -350,4 +354,53 @@
 
 .containerBenefits > svg {
   color: var(--HoverColorPrimary);
+}
+
+.desktop {
+  display: flex;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 1024px){
+  .containarPlans__item {
+    width: 250px;
+    min-height: 1600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  .containarPlans__item {
+    width: 250px;
+  }
+
+  .containarPlans__item__Primary {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .containarPlans__items {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 672px) {
+  .containarPlans__item {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid rgba(120, 140, 160, 0.4);
+    border-radius: 1rem;
+    min-height: auto;
+    height: auto;
+  }
 }
