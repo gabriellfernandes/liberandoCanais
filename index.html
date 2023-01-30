@@ -10,131 +10,122 @@
     <link rel="stylesheet" href="./src/styles/style.css" />
   </head>
   <body>
-    <header class="containerHeader">
-      <div class="containerHeader desktopHeader">
-        <div class="containerButton">
-          <a href="#planos" class="containerButton__buttonLink">Planos</a>
+    <div class="pageWapper">
+      <header class="containerHeader">
+        <div class="containerHeader desktopHeader">
+          <div class="containerButton">
+            <a href="#planos" class="containerButton__buttonLink">Planos</a>
 
-          <a href="#duvidas" class="containerButton__buttonLink">Dúvidas</a>
+            <a href="#duvidas" class="containerButton__buttonLink">Dúvidas</a>
 
-          <a class="containerButton__buttonLink borderEnabled">
+            <a class="containerButton__buttonLink borderEnabled">
+              Área do Cliente
+            </a>
+          </div>
+
+          <img
+            src="./src/assets/liberando_canais.png"
+            alt="Logo Liberando canais"
+            class="containerHeader__logo"
+          />
+        </div>
+        <div class="containerHeader mobileHeader">
+          <img
+            src="./src/assets/liberando_canais.png"
+            alt="Logo Liberando canais"
+            class="containerHeader__logo"
+          />
+
+          <div class="containerHeader__burgerIcon" id="burgerButton">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="4"
+                y="6"
+                width="16"
+                height="2"
+                rx="1"
+                fill="currentColor"
+              ></rect>
+              <rect
+                x="4"
+                y="11"
+                width="16"
+                height="2"
+                rx="1"
+                fill="currentColor"
+              ></rect>
+              <rect
+                x="4"
+                y="16"
+                width="16"
+                height="2"
+                rx="1"
+                fill="currentColor"
+              ></rect>
+            </svg>
+          </div>
+        </div>
+
+        <div class="containerItensClose hidden" id="modalHeader">
+          <a href="#planos" class="containerItens__buttonLink">Planos</a>
+
+          <a href="#duvidas" class="containerItens__buttonLink">Dúvidas</a>
+
+          <a class="containerItens__buttonLink borderEnabled">
             Área do Cliente
           </a>
         </div>
+      </header>
 
-        <img
-          src="./src/assets/liberando_canais.png"
-          alt="Logo Liberando canais"
-          class="containerHeader__logo"
-        />
-      </div>
-      <div class="containerHeader mobileHeader">
-        <img
-          src="./src/assets/liberando_canais.png"
-          alt="Logo Liberando canais"
-          class="containerHeader__logo"
-        />
-
-        <div class="containerHeader__burgerIcon" id="burgerButton">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="4"
-              y="6"
-              width="16"
-              height="2"
-              rx="1"
-              fill="currentColor"
-            ></rect>
-            <rect
-              x="4"
-              y="11"
-              width="16"
-              height="2"
-              rx="1"
-              fill="currentColor"
-            ></rect>
-            <rect
-              x="4"
-              y="16"
-              width="16"
-              height="2"
-              rx="1"
-              fill="currentColor"
-            ></rect>
-          </svg>
-        </div>
-      </div>
-
-      <div class="containerItensClose hidden" id="modalHeader">
-        <a href="#planos" class="containerItens__buttonLink">Planos</a>
-
-        <a href="#duvidas" class="containerItens__buttonLink">Dúvidas</a>
-
-        <a class="containerItens__buttonLink borderEnabled">
-          Área do Cliente
-        </a>
-      </div>
-    </header>
-
-    <main>
-      <div>
-        <img
-          src="https://uploads-ssl.webflow.com/61b1b0f3cfbb813f0495d1f9/61d57149e34ebb2f07ae702d_BG%203-min.png"
-          loading="lazy"
-          sizes="100vw"
-          srcset="
-            https://uploads-ssl.webflow.com/61b1b0f3cfbb813f0495d1f9/61d57149e34ebb2f07ae702d_BG%203-min-p-500.png 500w,
-            https://uploads-ssl.webflow.com/61b1b0f3cfbb813f0495d1f9/61d57149e34ebb2f07ae702d_BG%203-min.png       693w
-          "
-          alt=""
-          class="background-shape-left"
-        />
-        <img
-          src="https://uploads-ssl.webflow.com/61b1b0f3cfbb813f0495d1f9/61d5714be02791613c9a7fba_BG%204-min.png"
-          loading="lazy"
-          sizes="100vw"
-          srcset="
-            https://uploads-ssl.webflow.com/61b1b0f3cfbb813f0495d1f9/61d5714be02791613c9a7fba_BG%204-min-p-500.png 500w,
-            https://uploads-ssl.webflow.com/61b1b0f3cfbb813f0495d1f9/61d5714be02791613c9a7fba_BG%204-min.png       764w
-          "
-          alt=""
-          class="background-shape-rigth"
-        />
-      </div>
-
-      <div class="containerInfo">
-        <h2 class="containerInfo__title">O Melhor de lista de canais, filmes e séries.</h2>
-        <p  class="containerInfo__text">
-          Teste agora mesmo a melhor lista de canais, filmes e séries do Brasil,
-          2 horas 100% grátis
-        </p>
-
-        <a
-          target="_blank"
-          data-w-id="ece1c029-f17a-308d-4b71-7c617ac009ed"
-          href="https://liberandocanais.com/"
-          class="containerInfo__button"
-        >
-          <div>Testar agora</div>
-          <div
-            style="
-              -webkit-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1)
-                rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);
-              -moz-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0)
-                rotateY(0) rotateZ(0deg) skew(0, 0);
-              -ms-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0)
-                rotateY(0) rotateZ(0deg) skew(0, 0);
-              transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0)
-                rotateY(0) rotateZ(0deg) skew(0, 0);
+      <main>
+        <div>
+          <img
+            src="https://uploads-ssl.webflow.com/61b1b0f3cfbb813f0495d1f9/61d57149e34ebb2f07ae702d_BG%203-min.png"
+            loading="lazy"
+            sizes="100vw"
+            srcset="
+              https://uploads-ssl.webflow.com/61b1b0f3cfbb813f0495d1f9/61d57149e34ebb2f07ae702d_BG%203-min-p-500.png 500w,
+              https://uploads-ssl.webflow.com/61b1b0f3cfbb813f0495d1f9/61d57149e34ebb2f07ae702d_BG%203-min.png       693w
             "
-            class=""
+            alt=""
+            class="background-shape-left"
+          />
+          <img
+            src="https://uploads-ssl.webflow.com/61b1b0f3cfbb813f0495d1f9/61d5714be02791613c9a7fba_BG%204-min.png"
+            loading="lazy"
+            sizes="100vw"
+            srcset="
+              https://uploads-ssl.webflow.com/61b1b0f3cfbb813f0495d1f9/61d5714be02791613c9a7fba_BG%204-min-p-500.png 500w,
+              https://uploads-ssl.webflow.com/61b1b0f3cfbb813f0495d1f9/61d5714be02791613c9a7fba_BG%204-min.png       764w
+            "
+            alt=""
+            class="background-shape-rigth"
+          />
+        </div>
+
+        <div class="containerInfo">
+          <h2 class="containerInfo__title">
+            O Melhor de lista de canais, filmes e séries.
+          </h2>
+          <p class="containerInfo__text">
+            Teste agora mesmo a melhor lista de canais, filmes e séries do
+            Brasil, 2 horas 100% grátis
+          </p>
+
+          <a
+            target="_blank"
+            data-w-id="ece1c029-f17a-308d-4b71-7c617ac009ed"
+            href="https://liberandocanais.com/"
+            class="containerInfo__button"
           >
+            <div>Testar agora</div>
+
             <svg
               width="29"
               height="28"
@@ -147,11 +138,1215 @@
                 fill="currentColor"
               ></path>
             </svg>
-          </div>
-        </a>
-      </div>
-    </main>
+          </a>
+        </div>
 
+        <div class="containarPlans" id="planos">
+          <h2>Nossos Planos</h2>
+          <div class="containarPlans__items desktop">
+            <div class="containarPlans__item">
+              <div class="containarPlans__price">
+                <h2>Mensal</h2>
+
+                <p>R$25</p>
+
+                <a href=""> Assinar </a>
+              </div>
+              <div class="containerBenefits__list">
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>1 Tela</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>+100.000 Conteúdo</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Qualidade HD/SD</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Guia de Programação [EPG]</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Assista no Smartphone/Tablet</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Assista na Smart TV</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Assista no Computador</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Assista no TV Box/Chromecast</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Programação Adultos [Opcional]</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Rádios Online</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Cortesias: Pacote Filmes e Séries</p>
+                </div>
+              </div>
+            </div>
+            <div class="containarPlans__item containarPlans__item__Primary">
+              <div class="containarPlans__price">
+                <h2>Trimestral</h2>
+
+                <p>R$60</p>
+
+                <a href="" class="containarPlans__button"> Assinar </a>
+              </div>
+              <div class="containerBenefits__list">
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>1 Tela</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>+100.000 Conteúdo</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Qualidade HD/SD</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Guia de Programação [EPG]</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Assista no Smartphone/Tablet</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Assista na Smart TV</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Assista no Computador</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Assista no TV Box/Chromecast</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Programação Adultos [Opcional]</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Rádios Online</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Cortesias: Pacote Filmes e Séries</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Canais Legendados</p>
+                </div>
+              </div>
+            </div>
+            <div class="containarPlans__item">
+              <div class="containarPlans__price">
+                <h2>Semestral</h2>
+
+                <p>R$150</p>
+
+                <a href=""> Assinar </a>
+              </div>
+              <div class="containerBenefits__list">
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>1 Tela</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>+100.000 Conteúdo</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Qualidade HD/SD</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Guia de Programação [EPG]</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Assista no Smartphone/Tablet</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Assista na Smart TV</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Assista no Computador</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Assista no TV Box/Chromecast</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Programação Adultos [Opcional]</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Rádios Online</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Cortesias: Pacote Filmes e Séries</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Canais Legendados</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="containarPlans__items mobile">
+           
+            <div class="containarPlans__item containarPlans__item__Primary">
+              <div class="containarPlans__price">
+                <h2>Trimestral</h2>
+
+                <p>R$60</p>
+
+                <a href="" class="containarPlans__button"> Assinar </a>
+              </div>
+              <div class="containerBenefits__list">
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>1 Tela</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>+100.000 Conteúdo</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Qualidade HD/SD</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Guia de Programação [EPG]</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Assista no Smartphone/Tablet</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Assista na Smart TV</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Assista no Computador</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Assista no TV Box/Chromecast</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Programação Adultos [Opcional]</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Rádios Online</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Cortesias: Pacote Filmes e Séries</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Canais Legendados</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="containarPlans__item">
+                <div class="containarPlans__price">
+                  <h2>Mensal</h2>
+  
+                  <p>R$25</p>
+  
+                  <a href=""> Assinar </a>
+                </div>
+                <div class="containerBenefits__list">
+                  <div class="containerBenefits">
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+  
+                    <p>1 Tela</p>
+                  </div>
+                  <div class="containerBenefits">
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+  
+                    <p>+100.000 Conteúdo</p>
+                  </div>
+                  <div class="containerBenefits">
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+  
+                    <p>Qualidade HD/SD</p>
+                  </div>
+                  <div class="containerBenefits">
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+  
+                    <p>Guia de Programação [EPG]</p>
+                  </div>
+                  <div class="containerBenefits">
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+  
+                    <p>Assista no Smartphone/Tablet</p>
+                  </div>
+                  <div class="containerBenefits">
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+  
+                    <p>Assista na Smart TV</p>
+                  </div>
+                  <div class="containerBenefits">
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+  
+                    <p>Assista no Computador</p>
+                  </div>
+                  <div class="containerBenefits">
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+  
+                    <p>Assista no TV Box/Chromecast</p>
+                  </div>
+                  <div class="containerBenefits">
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+  
+                    <p>Programação Adultos [Opcional]</p>
+                  </div>
+                  <div class="containerBenefits">
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+  
+                    <p>Rádios Online</p>
+                  </div>
+                  <div class="containerBenefits">
+                    <svg
+                      width="25"
+                      height="25"
+                      viewBox="0 0 25 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+  
+                    <p>Cortesias: Pacote Filmes e Séries</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="containarPlans__item">
+              <div class="containarPlans__price">
+                <h2>Semestral</h2>
+
+                <p>R$150</p>
+
+                <a href=""> Assinar </a>
+              </div>
+              <div class="containerBenefits__list">
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>1 Tela</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>+100.000 Conteúdo</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Qualidade HD/SD</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Guia de Programação [EPG]</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Assista no Smartphone/Tablet</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Assista na Smart TV</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Assista no Computador</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Assista no TV Box/Chromecast</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Programação Adultos [Opcional]</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Rádios Online</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Cortesias: Pacote Filmes e Séries</p>
+                </div>
+                <div class="containerBenefits">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 25 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0335 7.57881C18.6335 7.17881 18.0335 7.17881 17.6335 7.57881L10.1335 15.0788L7.0335 11.9788C6.6335 11.5788 6.0335 11.5788 5.6335 11.9788C5.2335 12.3788 5.2335 12.9788 5.6335 13.3788L9.4335 17.1788C9.6335 17.3788 9.8335 17.4788 10.1335 17.4788C10.4335 17.4788 10.6335 17.3788 10.8335 17.1788L19.0335 8.97881C19.4335 8.57881 19.4335 7.97881 19.0335 7.57881Z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+
+                  <p>Canais Legendados</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+            <div>
+                <h2>Você só encontra aqui</h2>
+                <a href="#planos" class="containerItens__buttonLink">Começar agora</a>
+            </div>
+        </div>
+      </main>
+    </div>
     <script src="./src/scripts/index.js"></script>
   </body>
 </html>
