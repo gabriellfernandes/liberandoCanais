@@ -462,7 +462,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 200px;
+  margin-bottom: 80px;
   height: 648px;
 }
 
@@ -606,7 +606,7 @@
 
 .containerServicesInfo__image {
   width: 99px;
-  height: 110px;
+  min-height: 110px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -633,11 +633,11 @@
 }
 
 .containerServicesInfo__image > .blue {
-  border-color: #0061FC
+  border-color: #0061fc;
 }
 
 .containerServicesInfo__image > .green {
-  border-color: #2EA82F
+  border-color: #2ea82f;
 }
 
 .containerServicesInfo__item > h3 {
@@ -656,7 +656,7 @@
 
 @media (max-width: 1300px) {
   .containerServicesInfo__item {
-    height: 290px;
+    height: fit-content;
   }
 }
 
