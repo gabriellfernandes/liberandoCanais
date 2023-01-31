@@ -620,6 +620,26 @@
   animation: pulse2 3s ease infinite;
 }
 
+.containerServicesInfo__image > .purple {
+  border-color: #7e35f8;
+}
+
+.containerServicesInfo__image > .orange {
+  border-color: #e36b0a;
+}
+
+.containerServicesInfo__image > .red {
+  border-color: #d45241;
+}
+
+.containerServicesInfo__image > .blue {
+  border-color: #0061FC
+}
+
+.containerServicesInfo__image > .green {
+  border-color: #2EA82F
+}
+
 .containerServicesInfo__item > h3 {
   margin-top: 0rem;
   margin-bottom: 0rem;
@@ -1005,7 +1025,6 @@
 }
 
 /* FAQ */
-
 .containerFaq {
   width: 80%;
   margin: 0 auto;
@@ -1060,7 +1079,7 @@
 }
 
 .containerFaq__list > .containerFaq__item[open] {
-  height: 150px;
+  height: 180px;
 }
 
 .containerFaq__list > details > summary {
