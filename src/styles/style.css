@@ -1078,6 +1078,8 @@
   gap: 40px;
 }
 
+
+
 .containerFaq__list > details {
   display: flex;
   height: 60px;
@@ -1103,6 +1105,7 @@
   height: 180px;
 }
 
+
 .containerFaq__list > details > summary {
   margin-top: 0rem;
   margin-bottom: 0rem;
@@ -1111,6 +1114,7 @@
   font-weight: 600;
   margin-bottom: 0px;
   padding: 0px;
+  padding-bottom: 10px;
 }
 
 .containerFaq__list > details > summary::-webkit-details-marker {
@@ -1164,7 +1168,7 @@
 
 @media (max-width: 660px) {
   .containerFaq {
-    width: 100%;
+    width: 80%;
   }
 
   .containerFaq__list > .containerFaq__item[open] {
@@ -1212,6 +1216,22 @@
   .containerFaq__list > details[open] {
     height: 250px;
   }
+}
+
+
+@keyframes detailsLeave {
+  from {
+    height: 200px;
+  }
+  to {
+    height: 60px;
+  }
+}
+
+.containerFaq__list > .detailsLeave {
+  animation: detailsLeave 0.3s ease;
+  animation: forwards;
+  height: 50px !important;
 }
 
 /* footer */

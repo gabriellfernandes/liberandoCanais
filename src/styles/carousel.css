@@ -73,7 +73,7 @@
   float: left;
   min-width: 120px;
   max-width: 120px;
-  transform: translateX(-10vw);
+  transform: translateX(-120px);
   border: none;
   display: flex;
   justify-content: center;
@@ -89,7 +89,7 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-10vw);
+    transform: translateX(-120px);
   }
 }
 
