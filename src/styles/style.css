@@ -1675,7 +1675,7 @@
 }
 
 .containerNews__list > li > .containerNews__info > p {
-  color: var(--TextColorMedium);
+  color: white;
   font-size: 0.9rem;
   padding: 0px;
   margin: 0px;
