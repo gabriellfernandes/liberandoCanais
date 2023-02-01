@@ -57,9 +57,15 @@
 .toast-text-bold {
   font-weight: 800;
   text-transform: uppercase;
-  color: #ff7171;
+  color: red;
 
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.toast-icon {
+  filter: invert(1);
+  margin-bottom: -0.2rem;
+  height: 1.5rem;
 }

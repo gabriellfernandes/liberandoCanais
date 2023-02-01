@@ -165,22 +165,13 @@ const channelImages = [
   <img src="./src/assets/channels/fishtv.png" />
 </li>`,
   `<li class="channelSlide animate">
-  <img src="./src/assets/channels/food.png" />
-</li>`,
-  `<li class="channelSlide animate">
   <img src="./src/assets/channels/foodnetwork.png" />
 </li>`,
   `<li class="channelSlide animate">
   <img src="./src/assets/channels/foxnews.png" />
 </li>`,
   `<li class="channelSlide animate">
-  <img src="./src/assets/channels/foxsports.png" />
-</li>`,
-  `<li class="channelSlide animate">
   <img src="./src/assets/channels/foxsports2.png" />
-</li>`,
-  `<li class="channelSlide animate">
-  <img src="./src/assets/channels/futura.png" />
 </li>`,
   `<li class="channelSlide animate">
   <img src="./src/assets/channels/fx.png" />
