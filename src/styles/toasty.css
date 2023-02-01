@@ -10,7 +10,7 @@
   bottom: 20px;
   left: -200px;
   opacity: 0;
-  font-size: .85rem;
+  font-size: 1rem;
   transition: all 1s ease-in-out;
   font-weight: bold;
   padding-right: 40px;
@@ -20,7 +20,7 @@
 }
 
 .buyText {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-weight: normal;
   color: white;
   text-align: center;
@@ -44,6 +44,13 @@
 }
 
 @media (max-width: 768px) {
+  #toast {
+    font-size: 0.85rem;
+  }
+
+  .buyText {
+    font-size: 0.75rem;
+  }
 }
 
 .toast-texts {
