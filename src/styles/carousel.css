@@ -101,3 +101,31 @@
     transform: translateX(-26.5vh);
   }
 }
+
+.headerSliderWrapper {
+  display: flex;
+  background-color: var(--HeaderColor);
+  height: 40px;
+  position: fixed;
+  top: 75px;
+  left: 0;
+  overflow: hidden;
+  min-width: 100%;
+}
+
+.headerSliderIcon {
+  height: 12px;
+  filter: invert(1);
+  margin-right: 4px;
+}
+
+.headerSlider {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerSliderText {
+  font-size: 12px;
+}

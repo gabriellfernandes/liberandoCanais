@@ -614,6 +614,7 @@
   padding-left: 10px;
   transition: all 1s ease;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .containerChannels__list > details > summary {
@@ -627,7 +628,6 @@
   padding-bottom: 10px;
 }
 
-
 .containerChannels__list > details > ul {
   display: flex;
   flex-wrap: wrap;
@@ -637,14 +637,14 @@
 }
 
 .containerChannels__list > details > ul > li {
-    width: 200px;
-    height: 300px;
-    border-radius: 1rem;
-    overflow: hidden;
-    border: 1px solid var(--TextColorMedium);
-  }
+  width: 200px;
+  height: 300px;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--TextColorMedium);
+}
 
-.containerChannels__list > details > ul > li > img { 
+.containerChannels__list > details > ul > li > img {
   clip-path: inset(4px 4px 4px 4px);
 }
 
@@ -662,7 +662,7 @@
 }
 
 .containerChannels__list > .containerChannels__details[open] {
-  height: calc(300px * 2 + 100px)
+  height: calc(300px * 2 + 100px);
 }
 
 @keyframes channelsLeave {
@@ -680,14 +680,13 @@
   height: 50px !important;
 }
 
-
 @media (max-width: 1024px) {
   .containerChannels__list > details[open] {
-    height: calc(300px * 2 + 100px)
+    height: calc(300px * 2 + 100px);
   }
 
   .containerChannels__list > .containerChannels__details[open] {
-    height: calc(300px * 3.2 + 100px)
+    height: calc(300px * 3.2 + 100px);
   }
 }
 
@@ -698,32 +697,30 @@
   }
 
   .containerChannels__list > details > ul {
-   width: 100%;
-   gap: 20px;
+    width: 100%;
+    gap: 20px;
   }
 
   .containerChannels__list > .containerChannels__details[open] {
-    height: calc(300px * 4.2 + 100px)
+    height: calc(300px * 4.2 + 100px);
   }
 }
 
 @media (max-width: 530px) {
-
   .containerChannels__list > details > ul {
     width: 80%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
-   }
+  }
 
-   
   .containerChannels__list > details[open] {
-    height: calc(300px * 4 + 100px)
+    height: calc(300px * 4 + 100px);
   }
 
   .containerChannels__list > .containerChannels__details[open] {
-    height: calc(300px * 7.3 + 100px)
+    height: calc(300px * 7.3 + 100px);
   }
 }
 
@@ -1239,6 +1236,7 @@
   padding-left: 10px;
   transition: all 0.5s ease;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .containerFaq__list > details:hover {
