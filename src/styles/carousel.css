@@ -147,7 +147,8 @@
   width: 100vw;
   display: flex;
   justify-content: space-around;
-  height: 18px;
+  align-items: center;
+  height: 40px;
   filter: invert(1);
   margin-top: 8px;
   z-index: 100;
@@ -156,6 +157,7 @@
 .headerSliderBtns {
   z-index: 101;
   cursor: pointer;
+  height: 18px;
 }
 
 @keyframes sliderHeader {
@@ -202,5 +204,93 @@
   100% {
     transform: translateX(0vw);
     opacity: 1;
+  }
+}
+
+.streamingPlatformsContainer {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-bottom: 24px;
+}
+.streamingPlatformsContainer > h2 {
+  font-size: 2.575rem;
+  line-height: 5.25rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+@media (max-width: 768px) {
+  .streamingPlatformsContainer > h2 {
+    font-size: 2rem;
+  }
+  .headerSliderButtonsWrapper {
+    justify-content: space-between;
+    margin: 0 5vw;
+    width: 90vw;
+  }
+}
+
+@media (max-width: 425px) {
+  .streamingPlatformsContainer > h2 {
+    font-size: 1.8rem;
+    width: 90%;
+    line-height: 2rem;
+    margin: 0 auto;
+  }
+
+  .streamingPlatformsContainer {
+    margin-bottom: 0px;
+  }
+  .headerSliderText {
+    font-size: 12px;
+  }
+}
+
+#streamingPlatformsContainer {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  margin: 5vh 0;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 5vh;
+  overflow: hidden;
+}
+
+#streamingPlatformsCarousel {
+  display: flex;
+}
+
+.streamingPlatformsSlide {
+  animation: translateStreamPlat 4s linear 0s 1 normal forwards;
+  -webkit-animation: translateStreamPlat 4s linear 0s 1 normal forwards;
+  -moz-animation: translateStreamPlat 4s linear 0s 1 normal forwards;
+  -o-animation: translateStreamPlat 4s linear 0s 1 normal forwards;
+  list-style: none;
+  position: relative;
+  float: left;
+  min-width: 120px;
+  max-width: 120px;
+  margin: 0 30px;
+  transform: translateX(-180px);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.streamingPlatformsSlide > img {
+  width: 90px;
+}
+
+@keyframes translateStreamPlat {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-180px);
   }
 }
