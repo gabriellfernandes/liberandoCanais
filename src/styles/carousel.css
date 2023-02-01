@@ -113,8 +113,15 @@
   min-width: 100%;
 }
 
+#headerCarousel {
+  display: flex;
+  overflow: hidden;
+  min-width: 100%;
+  height: 40px;
+}
+
 .headerSliderIcon {
-  height: 12px;
+  height: 16px;
   filter: invert(1);
   margin-right: 4px;
 }
@@ -124,8 +131,76 @@
   width: 100vw;
   justify-content: center;
   align-items: center;
+
+  animation: sliderHeader 1s linear 0s 1 normal forwards;
+  -webkit-animation: sliderHeader 1s linear 0s 1 normal forwards;
+  -moz-animation: sliderHeader 1s linear 0s 1 normal forwards;
+  -o-animation: sliderHeader 1s linear 0s 1 normal forwards;
 }
 
 .headerSliderText {
-  font-size: 12px;
+  font-size: 16x;
+}
+
+.headerSliderButtonsWrapper {
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  height: 18px;
+  filter: invert(1);
+  margin-top: 8px;
+  z-index: 100;
+}
+
+.headerSliderBtns {
+  z-index: 101;
+  cursor: pointer;
+}
+
+@keyframes sliderHeader {
+  30% {
+    transform: translateX(10vw);
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-100vw);
+    opacity: 1;
+  }
+}
+
+.headerSliderReverse {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-100vw);
+
+  animation: sliderReverseHeader 1s linear 0s 1 normal forwards;
+  -webkit-animation: sliderReverseHeader 1s linear 0s 1 normal forwards;
+  -moz-animation: sliderReverseHeader 1s linear 0s 1 normal forwards;
+  -o-animation: sliderReverseHeader 1s linear 0s 1 normal forwards;
+}
+
+@keyframes sliderReverseHeader {
+  30% {
+    transform: translateX(-10vw);
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0vw);
+    opacity: 1;
+  }
 }
