@@ -120,8 +120,9 @@ const createChannelItem = () => {
   channels.forEach((elem) => {
     const details = document.createElement("details");
     details.classList.add(`detailsqnt${elem.qntImages}`);
-    elem.title == "Esporte" &&
-      details.classList.add("containerChannels__details");
+    if (elem.title === "Esporte") {
+        details.open = true;
+    }
 
     details.addEventListener("toggle", (e) => {
       e.preventDefault();

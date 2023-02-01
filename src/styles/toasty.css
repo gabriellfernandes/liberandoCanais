@@ -1,0 +1,48 @@
+#toast {
+    background-color: #00c27e !important;
+    padding: 15px 20px;
+    min-width: auto;
+    position: fixed;
+    border-radius: 4px;
+    border-left: 8px solid #019a64 !important;
+    z-index: 99999;
+    color: white;
+    bottom: 20px;
+    left: -200px;
+    opacity: 0;
+    font-size: 1.2rem;
+    transition: all 1s ease-in-out;
+    font-weight: bold;
+    padding-right: 40px;
+    flex-wrap: wrap;
+    max-width: calc(100vw - 100px);
+  }
+
+  .buyText{
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+  }
+  
+  #toast.show {
+    opacity: 1;
+    left: 20px;
+  }
+  
+  #toast-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: bold;
+    color: white;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 768px) {
+
+  }
+
