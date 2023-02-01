@@ -10,16 +10,17 @@
   bottom: 20px;
   left: -200px;
   opacity: 0;
-  font-size: 1.2rem;
+  font-size: .8rem;
   transition: all 1s ease-in-out;
   font-weight: bold;
   padding-right: 40px;
   flex-wrap: wrap;
   max-width: calc(100vw - 100px);
+  align-items: center;
 }
 
 .buyText {
-  font-size: 1.1rem;
+  font-size: 0.7rem;
   font-weight: normal;
   color: white;
   text-align: center;
@@ -39,7 +40,7 @@
   background-color: transparent;
   font-weight: bold;
   color: white;
-  font-size: 1rem;
+  font-size: 0.7rem;
 }
 
 @media (max-width: 768px) {
@@ -67,5 +68,5 @@
 .toast-icon {
   filter: invert(1);
   margin-bottom: -0.2rem;
-  height: 1.5rem;
+  height: 1rem;
 }
