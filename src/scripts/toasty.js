@@ -49,7 +49,7 @@ timeoutId = setInterval(() => {
     toast.classList.add("show");
     showToast();
   }
-}, 6000);
+}, 15000);
 
 function hideToast() {
   toast.classList.remove("show");
