@@ -774,6 +774,7 @@ margin: 0px;
 @media (max-width: 768px) {
   .containerSafety{
     flex-direction: column;
+    gap: 20px;
   }
 
   
