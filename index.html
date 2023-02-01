@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./src/assets/favicon-nine.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./src/assets/favicon-nine.png"
+      type="image/x-icon"
+    />
     <title>Liberando Canais</title>
     <link rel="stylesheet" href="./src/styles/resetStyle.css" />
     <link rel="stylesheet" href="src/styles/globalStyle.css" />
@@ -28,6 +32,7 @@
             class="containerHeader__logo"
           />
         </div>
+
         <div class="containerHeader mobileHeader">
           <img
             src="./src/assets/header/liberando_canais.png"
@@ -47,6 +52,54 @@
           <a href="#planos" class="containerItens__buttonLink">Planos</a>
 
           <a href="#duvidas" class="containerItens__buttonLink">Dúvidas</a>
+        </div>
+
+        <div class="headerSliderWrapper">
+          <div class="headerSliderButtonsWrapper">
+            <img
+              src="./src/assets/headerCarousel/arrowleft.svg"
+              class="headerSliderBtns"
+              id="headerSliderBtnsBack"
+            />
+            <img
+              src="./src/assets/headerCarousel/arrowright.svg"
+              class="headerSliderBtns"
+              id="headerSliderBtnsNext"
+            />
+          </div>
+
+          <div id="headerCarousel">
+            <div class="headerSlider">
+              <img
+                class="headerSliderIcon"
+                src="./src/assets/headerCarousel/shield.png"
+              />
+              <p class="headerSliderText">Site 100% seguro com segurança SSL</p>
+            </div>
+
+            <div class="headerSlider">
+              <img
+                class="headerSliderIcon"
+                src="./src/assets/headerCarousel/creditcard.png"
+              />
+              <p class="headerSliderText">Pague com cartões em até 12x</p>
+            </div>
+
+            <div class="headerSlider">
+              <img
+                class="headerSliderIcon"
+                src="./src/assets/headerCarousel/shield.png"
+              />
+              <p class="headerSliderText">Site 100% seguro com segurança SSL</p>
+            </div>
+            <div class="headerSlider">
+              <img
+                class="headerSliderIcon"
+                src="./src/assets/headerCarousel/shield.png"
+              />
+              <p class="headerSliderText">Site 100% seguro com segurança SSL</p>
+            </div>
+          </div>
         </div>
       </header>
       <main>
@@ -1662,7 +1715,52 @@
 
         <div class="containerChannels">
           <h2>Canais No Brasil</h2>
+          
+        </div>
 
+        <div class="streamingPlatformsContainer">
+          <h2 id="streamingPlatformsTittle">
+            As melhores plataformas de stream
+          </h2>
+          <section id="streamingPlatformsContainer">
+            <ul id="streamingPlatformsCarousel" class="animate">
+              <li class="streamingPlatformsSlide animate">
+                <img src="./src/assets/streamingCarousel/appletv.png" />
+              </li>
+
+              <li class="streamingPlatformsSlide animate">
+                <img src="./src/assets/streamingCarousel/disneyplus.png" />
+              </li>
+
+              <li class="streamingPlatformsSlide animate">
+                <img src="./src/assets/streamingCarousel/globoplay.png" />
+              </li>
+
+              <li class="streamingPlatformsSlide animate">
+                <img src="./src/assets/streamingCarousel/hbomax.png" />
+              </li>
+
+              <li class="streamingPlatformsSlide animate">
+                <img src="./src/assets/streamingCarousel/HuluLogo.png" />
+              </li>
+
+              <li class="streamingPlatformsSlide animate">
+                <img src="./src/assets/streamingCarousel/netflix_o7nyzq.png" />
+              </li>
+
+              <li class="streamingPlatformsSlide animate">
+                <img src="./src/assets/streamingCarousel/paramount-plus.png" />
+              </li>
+
+              <li class="streamingPlatformsSlide animate">
+                <img src="./src/assets/streamingCarousel/primevideo.png" />
+              </li>
+
+              <li class="streamingPlatformsSlide animate">
+                <img src="./src/assets/streamingCarousel/starplus.png" />
+              </li>
+            </ul>
+          </section>
         </div>
 
         <div class="containerServicesInfo">
@@ -2097,37 +2195,51 @@
 
         <div class="containerFaq" id="duvidas">
           <h2>FAQ</h2>
-
-        
         </div>
 
         <div class="containerNews">
           <div class="containerNews__title">
             <h2>Artigos relacionados</h2>
-            <p>Veja o que alguns dos principais portais de notícias estão falando.</p>
+            <p>
+              Veja o que alguns dos principais portais de notícias estão
+              falando.
+            </p>
           </div>
-          
 
           <ul class="containerNews__list">
             <li>
-                <div class="containerNews__logo">
-                  <img src="./src/assets/logosNews/logo-r7.png" alt="r7 logo">
-                </div>
-                <p>Todas as funções de tecnologia posssíveis e vários extras para sua tv. Empresa nacional de telecomunicações lança método exclusivo no Brasil.</p>
+              <div class="containerNews__logo">
+                <img src="./src/assets/logosNews/logo-r7.png" alt="r7 logo" />
+              </div>
+              <p>
+                Todas as funções de tecnologia posssíveis e vários extras para
+                sua tv. Empresa nacional de telecomunicações lança método
+                exclusivo no Brasil.
+              </p>
             </li>
-          
+
             <li>
               <div class="containerNews__logo">
-                <img src="./src/assets/logosNews/logo-g1.png" alt="r7 logo">
+                <img src="./src/assets/logosNews/logo-g1.png" alt="r7 logo" />
               </div>
-              <p>Uma opção para transformar a sua TV comum com milhares de conteúdos sem pagar por mensalidades.</p>
+              <p>
+                Uma opção para transformar a sua TV comum com milhares de
+                conteúdos sem pagar por mensalidades.
+              </p>
             </li>
-        
+
             <li>
               <div class="containerNews__logo">
-                <img src="./src/assets/logosNews/logo-exame.png" alt="r7 logo">
+                <img
+                  src="./src/assets/logosNews/logo-exame.png"
+                  alt="r7 logo"
+                />
               </div>
-              <p>Super fácil, incorpora aplicativos Android e possui alta definição para filmes em 4K, tecnologia que apresenta imagens de alta resolução.</p>
+              <p>
+                Super fácil, incorpora aplicativos Android e possui alta
+                definição para filmes em 4K, tecnologia que apresenta imagens de
+                alta resolução.
+              </p>
             </li>
           </ul>
         </div>
@@ -2173,5 +2285,7 @@
     <script src="./src/scripts/toasty.js"></script>
     <script src="./src/scripts/moviesCarousel.js"></script>
     <script src="./src/scripts/channelsCarousel.js"></script>
+    <script src="./src//scripts/headerCarousel.js"></script>
+    <script src="./src/scripts/stremingCarousel.js"></script>
   </body>
 </html>
