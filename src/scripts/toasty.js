@@ -36,26 +36,29 @@ function showToast() {
   toastPlan.innerHTML = ` <span class="buyText">acabou de comprar</span>`;
 
   toast.classList.add("show");
+  resetTimeout();
+}
+
+let timeout4s = null;
+
+let resetTimeout = () => {
+  clearTimeout(timeout4s);
+  timeout4s = setTimeout(() => {
+    hideToast();
+  }, 4000);
 }
 
 timeoutId = setInterval(() => {
-  if (toast.className.includes("show")) {
-    hideToast();
-  } else {
-    toast.classList.add("show");
-    showToast();
-  }
+  showToast();
 }, 30000);
-
 
 function hideToast() {
   toast.classList.remove("show");
+  clearTimeout(timeout4s);
 }
 
 toastClose.addEventListener("click", hideToast);
 
-
 setTimeout(() => {
   showToast();
-}, 10000)
-
+}, 10000);
