@@ -24,6 +24,10 @@
             <a href="#planos" class="containerButton__buttonLink">Planos</a>
 
             <a href="#duvidas" class="containerButton__buttonLink">Dúvidas</a>
+
+            <a href="#" class="containerItens__buttonLink">Contato</a>
+
+            <a href="#conteudo" class="containerItens__buttonLink">Conteudo</a>
           </div>
 
           <img
@@ -52,6 +56,10 @@
           <a href="#planos" class="containerItens__buttonLink">Planos</a>
 
           <a href="#duvidas" class="containerItens__buttonLink">Dúvidas</a>
+
+          <a href="#" class="containerItens__buttonLink">Contato</a>
+
+          <a href="#conteudo" class="containerItens__buttonLink">Conteudo</a>
         </div>
 
         <div class="headerSliderWrapper">
@@ -60,11 +68,13 @@
               src="./src/assets/headerCarousel/arrowleft.svg"
               class="headerSliderBtns"
               id="headerSliderBtnsBack"
+              hidden
             />
             <img
               src="./src/assets/headerCarousel/arrowright.svg"
               class="headerSliderBtns"
               id="headerSliderBtnsNext"
+              hidden
             />
           </div>
 
@@ -237,32 +247,45 @@
           <h2>Conheça 4 benefícios do nosso produto</h2>
 
           <div class="ContainerProductBenefits__list">
-             <div class="ContainerProductBenefits__item">
-                <div class="ContainerProductBenefits__item-primary">
-                  <h2>1º</h2>
-                  <p>É compatível com todas as marcas de TV. Funciona 100% em TVs antigas também.</p>
-                </div>
+            <div class="ContainerProductBenefits__item">
+              <div class="ContainerProductBenefits__item-primary">
+                <h2>1º</h2>
+                <p>
+                  É compatível com todas as marcas de TV. Funciona 100% em TVs
+                  antigas também.
+                </p>
+              </div>
 
-                <div class="ContainerProductBenefits__item-secondary noBorderBottom">
-                  <h2>2º</h2>
-                  <p>O pagamento é único, para ter acesso a todo conteúdo que vai liberar os canais na sua TV.</p>
-                </div>
-             </div>
+              <div
+                class="ContainerProductBenefits__item-secondary noBorderBottom"
+              >
+                <h2>2º</h2>
+                <p>
+                  O pagamento é único, para ter acesso a todo conteúdo que vai
+                  liberar os canais na sua TV.
+                </p>
+              </div>
+            </div>
 
-             <div class="ContainerProductBenefits__item">
+            <div class="ContainerProductBenefits__item">
               <div class="ContainerProductBenefits__item-primary noBorderTop">
                 <h2>3º</h2>
-                <p>Tecnologia que permite você usar mesmo no interior ou locais distantes da cidade.</p>
+                <p>
+                  Tecnologia que permite você usar mesmo no interior ou locais
+                  distantes da cidade.
+                </p>
               </div>
 
               <div class="ContainerProductBenefits__item-secondary">
                 <h2>4º</h2>
-                <p>Nosso sistema atualiza e adiciona canais novos, filmes, séries e lançamentos exclusivos, tudo em primeira mão sem precisar fazer nada.</p>
+                <p>
+                  Nosso sistema atualiza e adiciona canais novos, filmes, séries
+                  e lançamentos exclusivos, tudo em primeira mão sem precisar
+                  fazer nada.
+                </p>
               </div>
-           </div>
-
+            </div>
           </div>
-         
         </div>
 
         <div class="containarPlans" id="planos">
@@ -478,7 +501,7 @@
                 <h2>Trimestral</h2>
                 <p class="oldValue">R$120</p>
                 <p>R$60</p>
-                
+
                 <a href="" class="containarPlans__button">
                   Assinar
                   <svg
@@ -493,7 +516,10 @@
                       fill="currentColor"
                     ></path></svg
                 ></a>
-                <img src="./src/assets/containerInfo/payment-ways.png" alt="metodos de pagamento">
+                <img
+                  src="./src/assets/containerInfo/payment-ways.png"
+                  alt="metodos de pagamento"
+                />
               </div>
               <div class="containerBenefits__list">
                 <div class="containerBenefits">
@@ -902,19 +928,24 @@
                 <p class="oldValue">R$120</p>
                 <p>R$60</p>
 
-                <a href="" class="containarPlans__button"> Assinar  <svg
-                  width="29"
-                  height="28"
-                  viewBox="0 0 29 28"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M21.4066 7.72333C21.2882 7.43826 21.0617 7.21172 20.7766 7.09333C20.6363 7.03355 20.4857 7.00184 20.3333 7H8.6666C8.35718 7 8.06043 7.12292 7.84164 7.34171C7.62285 7.5605 7.49993 7.85725 7.49993 8.16667C7.49993 8.47609 7.62285 8.77283 7.84164 8.99162C8.06043 9.21042 8.35718 9.33333 8.6666 9.33333H17.5216L7.83826 19.005C7.72891 19.1135 7.64212 19.2425 7.58289 19.3847C7.52366 19.5268 7.49316 19.6793 7.49316 19.8333C7.49316 19.9873 7.52366 20.1398 7.58289 20.282C7.64212 20.4242 7.72891 20.5532 7.83826 20.6617C7.94672 20.771 8.07575 20.8578 8.21792 20.917C8.36009 20.9763 8.51258 21.0068 8.6666 21.0068C8.82061 21.0068 8.9731 20.9763 9.11527 20.917C9.25744 20.8578 9.38647 20.771 9.49493 20.6617L19.1666 10.9783V19.8333C19.1666 20.1428 19.2895 20.4395 19.5083 20.6583C19.7271 20.8771 20.0238 21 20.3333 21C20.6427 21 20.9394 20.8771 21.1582 20.6583C21.377 20.4395 21.4999 20.1428 21.4999 19.8333V8.16667C21.4981 8.01421 21.4664 7.86359 21.4066 7.72333V7.72333Z"
-                    fill="currentColor"
-                  ></path></svg
-              ></a>
-              <img src="./src/assets/containerInfo/payment-ways.png" alt="metodos de pagamento">
+                <a href="" class="containarPlans__button">
+                  Assinar
+                  <svg
+                    width="29"
+                    height="28"
+                    viewBox="0 0 29 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21.4066 7.72333C21.2882 7.43826 21.0617 7.21172 20.7766 7.09333C20.6363 7.03355 20.4857 7.00184 20.3333 7H8.6666C8.35718 7 8.06043 7.12292 7.84164 7.34171C7.62285 7.5605 7.49993 7.85725 7.49993 8.16667C7.49993 8.47609 7.62285 8.77283 7.84164 8.99162C8.06043 9.21042 8.35718 9.33333 8.6666 9.33333H17.5216L7.83826 19.005C7.72891 19.1135 7.64212 19.2425 7.58289 19.3847C7.52366 19.5268 7.49316 19.6793 7.49316 19.8333C7.49316 19.9873 7.52366 20.1398 7.58289 20.282C7.64212 20.4242 7.72891 20.5532 7.83826 20.6617C7.94672 20.771 8.07575 20.8578 8.21792 20.917C8.36009 20.9763 8.51258 21.0068 8.6666 21.0068C8.82061 21.0068 8.9731 20.9763 9.11527 20.917C9.25744 20.8578 9.38647 20.771 9.49493 20.6617L19.1666 10.9783V19.8333C19.1666 20.1428 19.2895 20.4395 19.5083 20.6583C19.7271 20.8771 20.0238 21 20.3333 21C20.6427 21 20.9394 20.8771 21.1582 20.6583C21.377 20.4395 21.4999 20.1428 21.4999 19.8333V8.16667C21.4981 8.01421 21.4664 7.86359 21.4066 7.72333V7.72333Z"
+                      fill="currentColor"
+                    ></path></svg
+                ></a>
+                <img
+                  src="./src/assets/containerInfo/payment-ways.png"
+                  alt="metodos de pagamento"
+                />
               </div>
               <div class="containerBenefits__list">
                 <div class="containerBenefits">
@@ -1527,20 +1558,20 @@
             <h2>MXQ PRO 4K</h2>
             <p>R$ 280,00</p>
 
-            <a href="#" class="containarPlans__button">Comprar <svg
-              width="29"
-              height="28"
-              viewBox="0 0 29 28"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M21.4066 7.72333C21.2882 7.43826 21.0617 7.21172 20.7766 7.09333C20.6363 7.03355 20.4857 7.00184 20.3333 7H8.6666C8.35718 7 8.06043 7.12292 7.84164 7.34171C7.62285 7.5605 7.49993 7.85725 7.49993 8.16667C7.49993 8.47609 7.62285 8.77283 7.84164 8.99162C8.06043 9.21042 8.35718 9.33333 8.6666 9.33333H17.5216L7.83826 19.005C7.72891 19.1135 7.64212 19.2425 7.58289 19.3847C7.52366 19.5268 7.49316 19.6793 7.49316 19.8333C7.49316 19.9873 7.52366 20.1398 7.58289 20.282C7.64212 20.4242 7.72891 20.5532 7.83826 20.6617C7.94672 20.771 8.07575 20.8578 8.21792 20.917C8.36009 20.9763 8.51258 21.0068 8.6666 21.0068C8.82061 21.0068 8.9731 20.9763 9.11527 20.917C9.25744 20.8578 9.38647 20.771 9.49493 20.6617L19.1666 10.9783V19.8333C19.1666 20.1428 19.2895 20.4395 19.5083 20.6583C19.7271 20.8771 20.0238 21 20.3333 21C20.6427 21 20.9394 20.8771 21.1582 20.6583C21.377 20.4395 21.4999 20.1428 21.4999 19.8333V8.16667C21.4981 8.01421 21.4664 7.86359 21.4066 7.72333V7.72333Z"
-                fill="currentColor"
-              ></path>
-            </svg></a>
-
-           
+            <a href="#" class="containarPlans__button"
+              >Comprar
+              <svg
+                width="29"
+                height="28"
+                viewBox="0 0 29 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.4066 7.72333C21.2882 7.43826 21.0617 7.21172 20.7766 7.09333C20.6363 7.03355 20.4857 7.00184 20.3333 7H8.6666C8.35718 7 8.06043 7.12292 7.84164 7.34171C7.62285 7.5605 7.49993 7.85725 7.49993 8.16667C7.49993 8.47609 7.62285 8.77283 7.84164 8.99162C8.06043 9.21042 8.35718 9.33333 8.6666 9.33333H17.5216L7.83826 19.005C7.72891 19.1135 7.64212 19.2425 7.58289 19.3847C7.52366 19.5268 7.49316 19.6793 7.49316 19.8333C7.49316 19.9873 7.52366 20.1398 7.58289 20.282C7.64212 20.4242 7.72891 20.5532 7.83826 20.6617C7.94672 20.771 8.07575 20.8578 8.21792 20.917C8.36009 20.9763 8.51258 21.0068 8.6666 21.0068C8.82061 21.0068 8.9731 20.9763 9.11527 20.917C9.25744 20.8578 9.38647 20.771 9.49493 20.6617L19.1666 10.9783V19.8333C19.1666 20.1428 19.2895 20.4395 19.5083 20.6583C19.7271 20.8771 20.0238 21 20.3333 21C20.6427 21 20.9394 20.8771 21.1582 20.6583C21.377 20.4395 21.4999 20.1428 21.4999 19.8333V8.16667C21.4981 8.01421 21.4664 7.86359 21.4066 7.72333V7.72333Z"
+                  fill="currentColor"
+                ></path></svg
+            ></a>
           </div>
           <img
             src="./src/assets/containerInfo/tv-box.png"
@@ -1551,7 +1582,10 @@
         <div class="containerSafety">
           <div class="containerSafety__title">
             <h2>Você não acha seguro comprar na Internet?</h2>
-            <img src="./src/assets/servicesInfo/pc_cartao.png" alt="pc cartao">
+            <img
+              src="./src/assets/servicesInfo/pc_cartao.png"
+              alt="pc cartao"
+            />
           </div>
 
           <div class="containerSafety__info">
@@ -1559,33 +1593,52 @@
               <h2><span>Não se preocupe!</span> Veja como é seguro...</h2>
 
               <p>
-                Nossa loja nunca vai guardar suas informações pessoais, nem dados de pagamento.
-                Ao utilizar seu cartão no processo de pagamento, essas informações só podem ser visualizadas na operadora do seu cartão/banco e não temos acesso a essas informações.
-                Lei Geral de Proteção de Dados – LGPD Lei n. 13.709, de 14 de agosto de 2018</p>
+                Nossa loja nunca vai guardar suas informações pessoais, nem
+                dados de pagamento. Ao utilizar seu cartão no processo de
+                pagamento, essas informações só podem ser visualizadas na
+                operadora do seu cartão/banco e não temos acesso a essas
+                informações. Lei Geral de Proteção de Dados – LGPD Lei n.
+                13.709, de 14 de agosto de 2018
+              </p>
             </div>
 
             <div class="containerSafety__list">
               <div class="containerSafety__item">
-                <img src="./src/assets/securytiInfo/settings_input_antenna_FILL1_wght400_GRAD0_opsz48.svg" alt="escudo">
-                <p><span>Instalação</span> <br/> Após o pagamento, entraremos em contato para instalação</p>
+                <img
+                  src="./src/assets/securytiInfo/settings_input_antenna_FILL1_wght400_GRAD0_opsz48.svg"
+                  alt="escudo"
+                />
+                <p>
+                  <span>Instalação</span> <br />
+                  Após o pagamento, entraremos em contato para instalação
+                </p>
               </div>
               <div class="containerSafety__item">
-                <img src="./src/assets/securytiInfo/verified_user_FILL1_wght400_GRAD0_opsz48.svg" alt="escudo">
+                <img
+                  src="./src/assets/securytiInfo/verified_user_FILL1_wght400_GRAD0_opsz48.svg"
+                  alt="escudo"
+                />
                 <p>Dados pessoais sigilosos não são compartilhados</p>
               </div>
               <div class="containerSafety__item">
-                <img src="./src/assets/securytiInfo/lock_FILL1_wght400_GRAD0_opsz48.svg" alt="cadeado">
+                <img
+                  src="./src/assets/securytiInfo/lock_FILL1_wght400_GRAD0_opsz48.svg"
+                  alt="cadeado"
+                />
                 <p>Site blindado e protegido contra fraudes e roubo</p>
               </div>
               <div class="containerSafety__item">
-                <img src="./src/assets/securytiInfo/credit_score_FILL1_wght400_GRAD0_opsz48.svg" alt="cartao de credito">
+                <img
+                  src="./src/assets/securytiInfo/credit_score_FILL1_wght400_GRAD0_opsz48.svg"
+                  alt="cartao de credito"
+                />
                 <p>Formas de pagamentos 100% protegida</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="containerFamily">
+        <div class="containerFamily" id="conteudo">
           <h2 id="channels">Programação completa para sua família</h2>
           <section id="channelSlideWrapper">
             <ul id="channelCarousel" class="animate">
@@ -1848,9 +1901,7 @@
           </section>
         </div>
 
-        <div class="containerChannels">
-       
-        </div>
+        <div class="containerChannels"></div>
 
         <div class="streamingPlatformsContainer">
           <h2 id="streamingPlatformsTittle">
@@ -1934,7 +1985,6 @@
         </div>
 
         <div class="containerServicesInfo">
-
           <div class="containerServicesInfo__list">
             <div class="containerServicesInfo__item">
               <div class="containerServicesInfo__image">
@@ -2048,7 +2098,6 @@
         </div>
 
         <div class="containerWebPlayer">
-
           <div class="containerWebPlayer__infos">
             <div class="containerWebPlayer__title">
               <h2>Web Player</h2>
@@ -2256,13 +2305,14 @@
                   />
                 </div>
               </div>
-                <div
-                id="vid_637e7b7906deba000b064909"
+
+              <div
+                id="vid_637e7b8106deba000b06490d"
                 style="position: relative; width: 100%; padding: 56.25% 0 0"
               >
                 <img
-                  id="thumb_637e7b7906deba000b064909"
-                  src="https://images.converteai.net/515c862d-d746-4aca-9c18-44a8eb49d40b/players/637e7b7906deba000b064909/thumbnail.jpg"
+                  id="thumb_637e7b8106deba000b06490d"
+                  src="https://images.converteai.net/515c862d-d746-4aca-9c18-44a8eb49d40b/players/637e7b8106deba000b06490d/thumbnail.jpg"
                   style="
                     position: absolute;
                     top: 0;
@@ -2274,7 +2324,7 @@
                   "
                 />
                 <div
-                  id="backdrop_637e7b7906deba000b064909"
+                  id="backdrop_637e7b8106deba000b06490d"
                   style="
                     position: absolute;
                     top: 0;
@@ -2284,19 +2334,19 @@
                     backdrop-filter: blur(5px);
                   "
                 ></div>
-                </div>
-                <script type="text/javascript" id="scr_637e7b7906deba000b064909">
-                  var s = document.createElement("script");
-                  (s.src =
-                    "https://scripts.converteai.net/515c862d-d746-4aca-9c18-44a8eb49d40b/players/637e7b7906deba000b064909/player.js"),
-                    (s.async = !0),
-                    document.head.appendChild(s);
-                </script>
+              </div>
+              <script type="text/javascript" id="scr_637e7b8106deba000b06490d">
+                var s = document.createElement("script");
+                (s.src =
+                  "https://scripts.converteai.net/515c862d-d746-4aca-9c18-44a8eb49d40b/players/637e7b8106deba000b06490d/player.js"),
+                  (s.async = !0),
+                  document.head.appendChild(s);
+              </script>
 
               <div class="containerUserRating__user">
                 <img src="./src/assets/usersComments/1.jpg" alt="user" />
                 <div class="containerUserRating__user__title">
-                  <h4>Helena</h4>
+                  <h4>Ana</h4>
                   <p>Plano Trimestral (São Paulo)</p>
                 </div>
               </div>
@@ -2335,46 +2385,46 @@
               </div>
 
               <div
-              id="vid_637e7b8106deba000b06490d"
-              style="position: relative; width: 100%; padding: 56.25% 0 0"
-            >
-              <img
-                id="thumb_637e7b8106deba000b06490d"
-                src="https://images.converteai.net/515c862d-d746-4aca-9c18-44a8eb49d40b/players/637e7b8106deba000b06490d/thumbnail.jpg"
-                style="
-                  position: absolute;
-                  top: 0;
-                  left: 0;
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
-                  display: block;
-                "
-              />
-              <div
-                id="backdrop_637e7b8106deba000b06490d"
-                style="
-                  position: absolute;
-                  top: 0;
-                  width: 100%;
-                  height: 100%;
-                  -webkit-backdrop-filter: blur(5px);
-                  backdrop-filter: blur(5px);
-                "
-              ></div>
-            </div>
-            <script type="text/javascript" id="scr_637e7b8106deba000b06490d">
-              var s = document.createElement("script");
-              (s.src =
-                "https://scripts.converteai.net/515c862d-d746-4aca-9c18-44a8eb49d40b/players/637e7b8106deba000b06490d/player.js"),
-                (s.async = !0),
-                document.head.appendChild(s);
-            </script>
+                id="vid_637e7b7906deba000b064909"
+                style="position: relative; width: 100%; padding: 56.25% 0 0"
+              >
+                <img
+                  id="thumb_637e7b7906deba000b064909"
+                  src="https://images.converteai.net/515c862d-d746-4aca-9c18-44a8eb49d40b/players/637e7b7906deba000b064909/thumbnail.jpg"
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                  "
+                />
+                <div
+                  id="backdrop_637e7b7906deba000b064909"
+                  style="
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    -webkit-backdrop-filter: blur(5px);
+                    backdrop-filter: blur(5px);
+                  "
+                ></div>
+              </div>
+              <script type="text/javascript" id="scr_637e7b7906deba000b064909">
+                var s = document.createElement("script");
+                (s.src =
+                  "https://scripts.converteai.net/515c862d-d746-4aca-9c18-44a8eb49d40b/players/637e7b7906deba000b064909/player.js"),
+                  (s.async = !0),
+                  document.head.appendChild(s);
+              </script>
 
               <div class="containerUserRating__user">
                 <img src="./src/assets/usersComments/2.jpg" alt="user" />
                 <div class="containerUserRating__user__title">
-                  <h4>Matheus</h4>
+                  <h4>Andre</h4>
                   <p>Plano Trimestral (Rio de Janeiro)</p>
                 </div>
               </div>
@@ -2480,7 +2530,6 @@
 
           <ul class="containerNews__list">
             <li class="containerNews__item">
-
               <div class="containerNews__info">
                 <div class="containerNews__logo">
                   <img src="./src/assets/logosNews/logo-r7.png" alt="r7 logo" />
@@ -2495,7 +2544,6 @@
             </li>
 
             <li class="containerNews__item">
-            
               <div class="containerNews__info">
                 <div class="containerNews__logo">
                   <img src="./src/assets/logosNews/logo-g1.png" alt="g7 logo" />
@@ -2508,7 +2556,6 @@
             </li>
 
             <li class="containerNews__item">
-             
               <div class="containerNews__info">
                 <div class="containerNews__logo">
                   <img
@@ -2518,8 +2565,8 @@
                 </div>
                 <p>
                   Super fácil, incorpora aplicativos Android e possui alta
-                  definição para filmes em 4K, tecnologia que apresenta imagens de
-                  alta resolução.
+                  definição para filmes em 4K, tecnologia que apresenta imagens
+                  de alta resolução.
                 </p>
               </div>
             </li>
@@ -2539,7 +2586,7 @@
               <h2>Páginas</h2>
               <a href="#planos">Planos</a>
             </li>
-          
+
             <li>
               <h2>Links Rápidos</h2>
               <a target="_blank" href="https://player.liberandocanais.com/"
@@ -2556,15 +2603,28 @@
             <li>
               <h2>Aplicativos</h2>
               <div class="containerFooter__item">
-              <a target="_blank" href="#"><img src="./src/assets/footer/play-store.png" alt="app store"></a>
-              <a target="_blank" href="#"><img src="./src/assets/footer/apple-store.png" alt="app store"></a>
-            </div>
+                <a target="_blank" href="#"
+                  ><img
+                    src="./src/assets/footer/play-store.png"
+                    alt="app store"
+                /></a>
+                <a target="_blank" href="#"
+                  ><img
+                    src="./src/assets/footer/apple-store.png"
+                    alt="app store"
+                /></a>
+              </div>
             </li>
           </ul>
         </div>
 
         <div class="containerCopyrigth">
-          <span class="containerCopyrigth__item">Feito com muito amor no Brasil <img src="./src/assets/favorite_FILL1_wght700_GRAD200_opsz48.svg" alt="coração"></span>
+          <span class="containerCopyrigth__item"
+            >Feito com muito amor no Brasil
+            <img
+              src="./src/assets/favorite_FILL1_wght700_GRAD200_opsz48.svg"
+              alt="coração"
+          /></span>
           <span> Copyright ©2022 All rights reserved | LIBERANDO CANAIS</span>
         </div>
       </footer>
@@ -2578,7 +2638,7 @@
       />
       <a id="toast-name" class="toast-texts" href="#planos"></a>
       <a id="toast-plan" class="toast-texts" href="#planos"></a>
-      <button id="toast-close">X</button>
+      <button id="toast-close" hidden>X</button>
     </div>
 
     <script src="./src/scripts/index.js"></script>

@@ -33,11 +33,7 @@ function showToast() {
   const plan = plans[Math.floor(Math.random() * plans.length)];
   toastName.innerText = name + " ";
 
-  toastPlan.innerHTML = ` <span class="buyText">comprou um plano</span> ${plan}`;
-
-  if (plan === "Trimestral") {
-    toastPlan.innerHTML += "<span class='buyText'> (Popular)</span>";
-  }
+  toastPlan.innerHTML = ` <span class="buyText">acabou de comprar</span>`;
 
   toast.classList.add("show");
 }
@@ -49,7 +45,8 @@ timeoutId = setInterval(() => {
     toast.classList.add("show");
     showToast();
   }
-}, 15000);
+}, 30000);
+
 
 function hideToast() {
   toast.classList.remove("show");
@@ -57,4 +54,8 @@ function hideToast() {
 
 toastClose.addEventListener("click", hideToast);
 
-showToast();
+
+setTimeout(() => {
+  showToast();
+}, 10000)
+
