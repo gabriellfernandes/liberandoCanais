@@ -174,7 +174,7 @@
     font-size: 0.8rem;
   }
 }
-@media (max-width: 561px){
+@media (max-width: 561px) {
   .containerPlayer > p {
     font-size: 0.7rem;
   }
@@ -402,6 +402,9 @@
   border: 2px solid rgba(120, 140, 160, 0.4);
   background-color: hsla(0, 0%, 100%, 0.05);
   border-radius: 1rem;
+  width: 80%;
+  height: fit-content;
+  margin-bottom: 80px;
 }
 
 .containarPlans__price {
@@ -412,18 +415,22 @@
   align-items: center;
   padding-bottom: 20px;
   border-bottom: 1px solid var(--BenefistColor);
+  margin-bottom: 10px;
 }
 
 .containarPlans__price > h2 {
   margin-top: 0rem;
   margin-bottom: 0rem;
-  font-size: 1.875rem;
+  font-size: 3rem;
   line-height: 2.625rem;
   font-weight: 500;
+  margin: 0px;
+  margin-bottom: 20px;
+  margin-top: 25px;
 }
 
 .containarPlans__price > p {
-  font-size: 4rem;
+  font-size: 2.5rem;
   line-height: 1.1;
   font-weight: 700;
   padding: 0px;
@@ -432,7 +439,20 @@
   margin-bottom: 13px;
 }
 
-.containarPlans__price > .oldValue {
+.containarPlans__price > .price {
+  font-size: 4.5rem;
+}
+
+.containarPlans__price > span {
+  font-size: 2rem;
+}
+
+.containarPlans__price > span > .cartao {
+  font-size: 2.2rem;
+  color: #2ea82f;
+}
+
+.containarPlans__price > p > .oldValue {
   text-decoration-line: line-through;
   color: red;
   margin: 0px;
@@ -440,15 +460,17 @@
   margin-top: 14px;
 }
 
+
+
 @keyframes pulse {
   0% {
-    transform: scale(1);
+    box-shadow: 0 0 0 0 rgb(0 190 79 / 40%);
   }
-  50% {
-    transform: scale(1.05);
+  70% {
+    box-shadow: 0 0 0 30px rgb(0 190 79 / 0%);
   }
   100% {
-    transform: scale(1);
+    box-shadow: 0 0 0 0 rgb(0 190 79 / 0%);
   }
 }
 
@@ -485,20 +507,21 @@
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
-  background-color: #fff;
   transition: all 200ms ease;
-  color: var(--ButtonTextColor);
+  color: white;
   line-height: 1.75rem;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
   gap: 5px;
+  width: 64%;
+  font-size: 1.4rem;
+  height: 45px;
+  background-color: #05a61d;
 }
 
 .containarPlans__price > .containarPlans__button:hover {
-  background-color: var(--HoverColorPrimary);
-  color: var(--HoverColorSecodary);
-  border: 1px solid var(--HoverColorPrimary);
+  filter: brightness(0.5);
 }
 
 .containerBenefits__list {
@@ -513,15 +536,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   gap: 10px;
 }
 
 .containerBenefits > p {
-  font-size: 1.375rem;
+  font-size: 2rem;
   line-height: 2rem;
   letter-spacing: 0.25px;
   color: var(--BenefistColor);
   text-align: left;
+  margin: 0px;
+  margin-bottom: 15px;
 }
 
 .containerBenefits > svg {
@@ -536,12 +562,6 @@
   display: none;
 }
 
-@media (max-width: 1024px) {
-  .containarPlans__item {
-    width: 250px;
-  }
-}
-
 @media (max-width: 768px) {
   .desktop {
     display: none;
@@ -549,6 +569,35 @@
 
   .mobile {
     display: flex;
+  }
+
+  .containarPlans__price > .price {
+    font-size: 3.8rem;
+  }
+
+  .containarPlans__price > span {
+    font-size: 1.8rem;
+  }
+
+  .containarPlans__price > span > .cartao {
+    font-size: 2.2rem;
+    color: #2ea82f;
+  }
+
+  .containarPlans__price > .oldvalue__title {
+    font-size: 2rem;
+  }
+
+  .containarPlans__price > p > .oldValue {
+    text-decoration-line: line-through;
+    color: red;
+    margin: 0px;
+    font-size: 2rem;
+    margin-top: 14px;
+  }
+
+  .containarPlans__price > .containarPlans__button {
+    height: 35px;
   }
 
   .containarPlans__item {
@@ -566,6 +615,10 @@
   .containarPlans > h2 {
     font-size: 2.5rem;
     line-height: 2.75rem;
+  }
+
+  .containarPlans__price > h2 {
+    font-size: 2rem;
   }
 
   .containarPlans__price > p {
@@ -587,10 +640,58 @@
     margin-bottom: 4px;
     margin-top: 4px;
     line-height: 1.8rem;
+    font-size: 1.5rem;
   }
 
   .containarPlans__price {
     margin-bottom: 20px;
+  }
+
+  .containarPlans__price > span {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media (max-width: 485px) {
+  .containarPlans__price > span > .cartao {
+    font-size: 1.4rem;
+  }
+
+  .containarPlans__price > span {
+    font-size: 1.2rem;
+  }
+
+  .containarPlans__price > .price {
+    font-size: 2.8rem;
+  }
+
+  .containarPlans__price > .oldvalue__title {
+    font-size: 1.8rem;
+  }
+
+  .containarPlans__price > p > .oldValue {
+    font-size: 1.9rem;
+  }
+
+  .containarPlans__price > .containarPlans__button {
+    font-size: 1rem;
+    font-weight: bold;
+    width: 80%;
+  
+  }
+
+  .containarPlans__price > .containarPlans__button > svg{
+    width: 25px;
+  }
+
+  .containerBenefits > p {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -599,11 +700,14 @@
     font-size: 2rem;
     line-height: 2.75rem;
   }
+  .containarPlans__price > .containarPlans__button {
+    font-size: .8rem;
+  }
 }
 
 /* tv Box */
 .containerTvBox {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -723,6 +827,7 @@
   margin: 0px;
   min-height: 650px;
   gap: 25px;
+  margin-top: 80px;
 }
 
 .containerSafety__title > h2 {
@@ -765,6 +870,7 @@
   font-size: 2rem;
   line-height: 2rem;
   margin: 10px;
+  margin-top: 120px;
 }
 
 .containerSafety__info-text > p {
