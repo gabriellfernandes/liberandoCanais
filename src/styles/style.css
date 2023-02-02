@@ -169,6 +169,16 @@
   text-shadow: 0 0 3px #ff0000, 0 0 6px #ff0000, 0 0 9px #ff0000,
     0 0 12px #ff0000, 0 0 15px #ff0000, 0 0 18px #ff0000, 0 0 21px #ff0000;
 }
+@media (max-width: 1024px) {
+  .containerPlayer > p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 561px){
+  .containerPlayer > p {
+    font-size: 0.7rem;
+  }
+}
 
 /* container Info */
 
@@ -738,7 +748,7 @@
   margin: 0px;
 }
 
-.containerSafety__info-text{
+.containerSafety__info-text {
   margin-bottom: 40px;
 }
 
@@ -834,7 +844,7 @@
     flex-direction: column;
   }
 
-  .containerSafety__title{
+  .containerSafety__title {
     min-height: fit-content;
   }
 
@@ -861,7 +871,7 @@
     text-align: center;
   }
 
-  .containerSafety__item{
+  .containerSafety__item {
     width: 80% !important;
   }
 }
@@ -1093,7 +1103,7 @@
   width: 80%;
   margin: 0 auto;
   gap: 40px;
-  margin-bottom: 140px;
+  margin-bottom: 160px;
 }
 
 .containerServicesInfo__title {
@@ -1157,7 +1167,6 @@
   border: 2px dashed white;
   border-radius: 50%;
   animation: pulse2 3s ease infinite;
-
 }
 
 .containerServicesInfo__image > .purple {
@@ -1219,6 +1228,7 @@
 
   .containerServicesInfo__list {
     width: 100%;
+    margin-bottom: 160px;
   }
   .containerServicesInfo__title > h2 {
     font-size: 2rem;
@@ -1626,11 +1636,11 @@
 .containerFaq {
   width: 80%;
   margin: 0 auto;
-  margin-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 160px;
 }
 
 .containerFaq > h2 {
@@ -1882,8 +1892,6 @@
 }
 
 @media (max-width: 672px) {
-
-
   .containerNews__list {
     width: 100%;
     flex-direction: column;
@@ -1899,7 +1907,6 @@
 }
 
 @media (max-width: 425px) {
-
 }
 
 /* footer */
@@ -1957,7 +1964,7 @@
   flex-direction: column;
   text-align: center;
   gap: 5px;
-  height: 170px
+  height: 170px;
 }
 
 .containerFooter__list > li > a {
@@ -2034,15 +2041,14 @@
   margin-bottom: 0px;
 }
 
-.hiddenApp{
+.hiddenApp {
   visibility: hidden;
 }
 
-.hiddenDektop{
+.hiddenDektop {
   visibility: visible;
   list-style: none;
   height: 170px;
-  
 }
 
 .hiddenDektop > h2 {
@@ -2068,15 +2074,14 @@
     flex-direction: column;
   }
 
-  .hiddenApp{
+  .hiddenApp {
     display: flex;
     visibility: visible;
   }
 
-  .hiddenDektop{
+  .hiddenDektop {
     display: none;
   }
-  
 
   .containerFooter__list {
     width: 100%;
