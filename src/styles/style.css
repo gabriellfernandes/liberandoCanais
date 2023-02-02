@@ -698,6 +698,7 @@
   flex-direction: column;
   margin: 0px;
   min-height: 650px;
+  gap: 25px;
 }
 
 .containerSafety__title > h2 {
@@ -721,6 +722,10 @@
   max-height: fit-content;
   padding: 0px;
   margin: 0px;
+}
+
+.containerSafety__info-text{
+  margin-bottom: 40px;
 }
 
 .containerSafety__info > .containerSafety__info-text > h2 > span {
@@ -1074,6 +1079,7 @@
   width: 80%;
   margin: 0 auto;
   gap: 40px;
+  margin-bottom: 140px;
 }
 
 .containerServicesInfo__title {
