@@ -1954,7 +1954,8 @@
 .containerCopyrigth {
   display: flex;
   gap: 12px;
-  flex-direction: column;
+
+  flex-direction: column !important;
 }
 
 .containerCopyrigth > span {
