@@ -460,8 +460,6 @@
   margin-top: 14px;
 }
 
-
-
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 rgb(0 190 79 / 40%);
@@ -652,7 +650,6 @@
   }
 }
 
-
 @media (max-width: 485px) {
   .containarPlans__price > span > .cartao {
     font-size: 1.4rem;
@@ -678,10 +675,9 @@
     font-size: 1rem;
     font-weight: bold;
     width: 80%;
-  
   }
 
-  .containarPlans__price > .containarPlans__button > svg{
+  .containarPlans__price > .containarPlans__button > svg {
     width: 25px;
   }
 
@@ -701,7 +697,7 @@
     line-height: 2.75rem;
   }
   .containarPlans__price > .containarPlans__button {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -716,13 +712,21 @@
   height: 648px;
 }
 
-.containerTvBox > img {
-  width: 60%;
-  height: 648px;
+.imgBox > img {
   border-radius: 0px 1rem 1rem 0px;
   object-fit: cover;
   object-position: center;
   margin-top: 60px;
+}
+
+.containerTvBox > .imgBox {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 648px;
 }
 
 .containerTvBox__price {
@@ -743,12 +747,32 @@
   font-size: 2.5rem;
   line-height: 4.25rem;
   font-weight: 600;
+  margin: 0px;
 }
 
 .containerTvBox__price > p {
   font-size: 2rem;
   line-height: 1.1;
   font-weight: 700;
+  margin: 0px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.containerTvBox__price > .info {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-bottom: 40px;
+  gap: 5px;
+}
+
+.containerTvBox__price > .info > span {
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .containerTvBox__price > a {
@@ -758,9 +782,9 @@
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
-  background-color: #fff;
+  background-color: #05a61d;
   transition: all 200ms ease;
-  color: var(--ButtonTextColor);
+  color: white;
   line-height: 1.75rem;
   font-weight: 600;
   text-align: center;
@@ -775,8 +799,7 @@
 }
 
 .containerTvBox__price > a:hover {
-  background-color: var(--HoverColorPrimary);
-  color: var(--HoverColorSecodary);
+  filter: brightness(0.7);
 }
 
 @media (max-width: 768px) {
@@ -789,8 +812,13 @@
     margin-top: 10px;
   }
 
-  .containerTvBox > img {
+  .containerTvBox > .imgBox {
     width: 100%;
+    margin-top: 60px;
+  }
+
+  .imgBox > img {
+    width: 60%;
     border-radius: 0px 0px 1rem 1rem;
     margin-top: 0px;
   }
@@ -806,6 +834,10 @@
 @media (max-width: 425px) {
   .containerTvBox__price > h2 {
     font-size: 2rem;
+  }
+
+  .imgBox > img {
+    width: 80%;
   }
 }
 
