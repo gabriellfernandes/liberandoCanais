@@ -150,9 +150,42 @@
   padding-left: 20px;
  }
  .containerImg > img{
-  width: 120px;
+  width: 100px;
  }
 
- .modalContact{
-  height: 440px !important;
+ 
+.modal > .modalContact{
+  max-height: 440px;
  }
+ 
+ @media (max-width: 645px) {
+ .containerImg > h2 {
+  font-size: 1.2rem;
+ }
+
+ .containerImg > img{
+  width: 80px;
+ }
+
+
+ .modalContact{
+  max-height: 440px;
+ }
+ }
+
+ @media (max-width: 425px) {
+  .containerImg{
+    width: 85%;
+    flex-direction: column;
+    gap: 0px;
+    margin-bottom: 20px;
+  }
+  .containerImg > h2 {
+   font-size: 1rem;
+  }
+ 
+  .containerImg > img{
+   width: 60px;
+  }
+ 
+}
