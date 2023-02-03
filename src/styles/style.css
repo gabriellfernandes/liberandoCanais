@@ -387,10 +387,13 @@
   margin-bottom: 0rem;
   font-size: 3.375rem;
   line-height: 5.25rem;
-  font-weight: 600;
+  font-weight: normal;
   letter-spacing: -1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-shadow: 0 0 3px #f40051, 0 0 6px #f40051, 0 0 9px #f40051,
-  0 0 12px #f40051, 0 0 15px #f40051, 0 0 18px #f40051, 0 0 21px #f40051;
+    0 0 12px #f40051, 0 0 15px #f40051, 0 0 18px #f40051;
 }
 
 .containarPlans__item {
