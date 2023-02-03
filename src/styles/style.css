@@ -407,7 +407,7 @@
   border: 2px solid rgba(120, 140, 160, 0.4);
   background-color: hsla(0, 0%, 100%, 0.05);
   border-radius: 1rem;
-  width: 80%;
+  width: 100%;
   height: fit-content;
   margin-bottom: 80px;
 }
@@ -917,7 +917,7 @@
   font-size: 2rem;
   line-height: 2rem;
   margin: 10px;
-  margin-top: 120px;
+  margin-top: 92px;
 }
 
 .containerSafety__info-text > p {
@@ -2105,7 +2105,7 @@
 .containerFooter__list {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 30px;
   width: 65%;
   justify-content: flex-end;
   align-items: flex-end;
