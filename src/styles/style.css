@@ -1702,6 +1702,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 160px;
   }
 
   .containerUserRating__item {
@@ -2019,7 +2020,7 @@
 }
 
 .containerNews__list > li > .containerNews__info > p {
-  color: var(--TextColorMedium);
+  color: white;
   font-size: 0.9rem;
   padding: 0px;
   margin: 0px;
