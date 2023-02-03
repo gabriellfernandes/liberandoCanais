@@ -166,8 +166,8 @@
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 0px 0px 1rem 1rem;
-  text-shadow: 0 0 3px #ff0000, 0 0 6px #ff0000, 0 0 9px #ff0000,
-    0 0 12px #ff0000, 0 0 15px #ff0000, 0 0 18px #ff0000, 0 0 21px #ff0000;
+  text-shadow: 0 0 3px #F40051, 0 0 6px #F40051, 0 0 9px #F40051,
+  0 0 12px #F40051, 0 0 15px #F40051, 0 0 18px #F40051, 0 0 21px #F40051;
 }
 @media (max-width: 1024px) {
   .containerPlayer > p {
@@ -716,7 +716,6 @@
   border-radius: 0px 1rem 1rem 0px;
   object-fit: cover;
   object-position: center;
-  margin-top: 60px;
 }
 
 .containerTvBox > .imgBox {
@@ -726,7 +725,10 @@
   gap: 20px;
   align-items: center;
   justify-content: center;
-  height: 648px;
+  height: calc(648px - 80px);
+  padding: 40px;
+  background-color: white;
+  border-radius: 0px 1rem 1rem 0px;
 }
 
 .containerTvBox__price {
@@ -738,7 +740,6 @@
   background-color: hsla(0, 0%, 100%, 0.05);
   height: 100%;
   border-radius: 1rem 0px 0px 1rem;
-  margin-top: 60px;
 }
 
 .containerTvBox__price > h2 {
@@ -813,14 +814,14 @@
   }
 
   .containerTvBox > .imgBox {
-    width: 100%;
-    margin-top: 60px;
+    width: calc(100%);
+    padding: 0px;
+    padding-bottom: 40px;
+    border-radius: 0px 0px 1rem 1rem;
   }
 
-  .imgBox > img {
+  .containerTvBox > .imgBox > img {
     width: 60%;
-    border-radius: 0px 0px 1rem 1rem;
-    margin-top: 0px;
   }
 
   .containerTvBox__price {
@@ -834,6 +835,10 @@
 @media (max-width: 425px) {
   .containerTvBox__price > h2 {
     font-size: 2rem;
+  }
+
+  .containerTvBox > .imgBox {
+    padding: 0px;
   }
 
   .imgBox > img {
