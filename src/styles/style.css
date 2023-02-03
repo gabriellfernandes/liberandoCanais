@@ -453,6 +453,11 @@
   font-weight: 700;
 }
 
+.containarPlans__price > .price {
+  line-height: 10px !important;
+  margin-bottom: 70px;
+}
+
 .containarPlans__price > span {
   font-size: 2rem;
 }
@@ -581,7 +586,14 @@
 
   .containarPlans__price > .price {
     font-size: 3.8rem;
+    margin-top: 0px;
+    padding-top: 0px;
+    line-height: 1px;
+    margin-bottom: 70px;
+  
   }
+
+ 
 
   .containarPlans__price > span {
     font-size: 1.8rem;
