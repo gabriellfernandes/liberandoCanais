@@ -11,7 +11,7 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal-content, .modal-content2{
+.modal-content, .modal-content2, .modal-content3{
   background-color: #161616;
   border: 1px solid hsla(0, 0%, 100%, 0.05);
   width: 80%;
@@ -65,7 +65,7 @@
   }
 }
 
-.closeBtn, .closeBtn2 {
+.closeBtn, .closeBtn2, .closeBtn3 {
   color: #aaa;
   float: right;
   font-size: 28px;
@@ -74,7 +74,8 @@
 
 .closeBtn:hover,
 .closeBtn:focus, .closeBtn2:hover,
-.closeBtn2:focus {
+.closeBtn2:focus, .closeBtn3:hover,
+.closeBtn3:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -94,7 +95,7 @@
 }
 
 .scroll {
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 503px;
   padding-bottom: 40px;
 }
@@ -138,3 +139,20 @@
   margin-top: 10px;
   text-align: justify;
 }
+
+
+.containerImg{
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+  margin-top: 20px;
+  gap: 20px;
+  padding-left: 20px;
+ }
+ .containerImg > img{
+  width: 120px;
+ }
+
+ .modalContact{
+  height: 440px !important;
+ }

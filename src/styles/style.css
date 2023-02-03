@@ -166,8 +166,8 @@
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 0px 0px 1rem 1rem;
-  text-shadow: 0 0 3px #F40051, 0 0 6px #F40051, 0 0 9px #F40051,
-  0 0 12px #F40051, 0 0 15px #F40051, 0 0 18px #F40051, 0 0 21px #F40051;
+  text-shadow: 0 0 3px #f40051, 0 0 6px #f40051, 0 0 9px #f40051,
+    0 0 12px #f40051, 0 0 15px #f40051, 0 0 18px #f40051, 0 0 21px #f40051;
 }
 @media (max-width: 1024px) {
   .containerPlayer > p {
@@ -276,8 +276,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-shadow: 0 0 5px #2ea82f, 0 0 10px #2ea82f, 0 0 15px #2ea82f,
-    0 0 20px #2ea82f, 0 0 25px #2ea82f, 0 0 30px #2ea82f, 0 0 35px #2ea82f;
+  text-shadow: 0 0 3px #f40051, 0 0 6px #f40051, 0 0 9px #f40051,
+    0 0 12px #f40051, 0 0 15px #f40051, 0 0 18px #f40051, 0 0 21px #f40051;
 }
 
 .ContainerProductBenefits__list {
@@ -291,8 +291,8 @@
 
 .ContainerProductBenefits__item-primary > h2,
 .ContainerProductBenefits__item-secondary > h2 {
-  text-shadow: 0 0 5px #2ea82f, 0 0 10px #2ea82f, 0 0 15px #2ea82f,
-    0 0 20px #2ea82f, 0 0 25px #2ea82f, 0 0 30px #2ea82f, 0 0 35px #2ea82f;
+  text-shadow: 0 0 3px #f40051, 0 0 6px #f40051, 0 0 9px #f40051,
+    0 0 12px #f40051, 0 0 15px #f40051, 0 0 18px #f40051, 0 0 21px #f40051;
 }
 
 .ContainerProductBenefits__item {
@@ -2284,4 +2284,40 @@
     padding: 0px;
     height: max-content;
   }
+}
+
+.containerButtonBuy {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+  margin-bottom: 140px;
+  margin-top: 40px;
+}
+
+.containerButtonBuy_button{
+  display: flex;
+  padding: 0.75rem 1.25rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  transition: all 200ms ease;
+  color: white;
+  line-height: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  gap: 5px;
+  width: 64%;
+  font-size: 1.4rem;
+  height: 45px;
+  background-color: #05a61d;
+  animation: pulse 3s ease infinite;
+}
+
+.containerButtonBuy_button:hover {
+  filter: brightness(0.5);
 }
