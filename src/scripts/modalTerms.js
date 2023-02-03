@@ -2,6 +2,7 @@ const openModalBtn = document.querySelector("#openModalBtn");
 const openModalBtn2 = document.querySelector("#openModalBtn2");
 const openModalBtn3 = document.querySelector("#openModalBtn3");
 const openModalBtn4 = document.querySelector("#openModalBtn4");
+const openModalBtn5 = document.querySelector("#openModalBtn5");
 
 const modal = document.querySelector("#myModal");
 const modal2 = document.querySelector("#myModal2");
@@ -40,6 +41,13 @@ openModalBtn4.addEventListener("click", function () {
 
   modalContent3.classList.remove("modal-contentLeave");
 });
+
+openModalBtn5.addEventListener("click", function () {
+  modal3.style.display = "flex";
+
+  modalContent3.classList.remove("modal-contentLeave");
+});
+
 
 
 
