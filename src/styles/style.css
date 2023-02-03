@@ -409,7 +409,6 @@
   border-radius: 1rem;
   width: 100%;
   height: fit-content;
-  margin-bottom: 80px;
 }
 
 .containarPlans__price {
@@ -455,7 +454,7 @@
 
 .containarPlans__price > .price {
   line-height: 10px !important;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .containarPlans__price > span {
@@ -589,7 +588,7 @@
     margin-top: 0px;
     padding-top: 0px;
     line-height: 1px;
-    margin-bottom: 70px;
+    margin-bottom: 35px;
   
   }
 
@@ -990,7 +989,7 @@
   .containerSafety {
     flex-direction: column;
     gap: 20px;
-    margin-top: 200px;
+    margin-top: 0px;
   }
 
   .containerSafety__title {
