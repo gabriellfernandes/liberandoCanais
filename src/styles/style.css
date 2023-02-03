@@ -414,7 +414,7 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 20px;
-  border-bottom: 1px solid var(--BenefistColor);
+  border-top: 1px solid var(--BenefistColor);
   margin-bottom: 10px;
 }
 
