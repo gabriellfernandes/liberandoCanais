@@ -1,4 +1,4 @@
-const modal = document.querySelector("#preLoad")
+const modalContinue = document.querySelector("#preLoad")
 const button = document.querySelector("#continue")
 const body = document.querySelector("#body")
 
@@ -7,7 +7,6 @@ window.addEventListener("load", function () {
 });
 
 button.addEventListener("click", () => {
-    console.log(modal)
-    modal.remove()
+    modalContinue.remove()
     body.classList.remove("noScroll")
 })
