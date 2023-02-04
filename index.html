@@ -10,6 +10,7 @@
       type="image/x-icon"
     />
     <title>Liberando Canais</title>
+    <link rel="stylesheet" href="./src/styles/preLoad.css">
     <link rel="stylesheet" href="./src/styles/resetStyle.css" />
     <link rel="stylesheet" href="src/styles/globalStyle.css" />
     <link rel="stylesheet" href="./src/styles/style.css" />
@@ -20,7 +21,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="noScroll" id="body">
+    <div id="preLoad">
+      <div class="preLoad__title">
+        <h2>VERIFICADO</h2>
+        <P>Seja Bem-Vindo(a) Precisa ter acima de <span>18 anos</span> para acessar. Clique "Cotinuar".</P>
+        <button id="continue" class="opacityButton">Continuar</button>
+      </div>
+    </div>
+
     <div class="pageWapper">
       <header class="containerHeader">
         <div class="containerHeader desktopHeader">
@@ -2381,6 +2390,7 @@
       </div>
     </div>
 
+    <script src="./src/scripts/preload.js"></script>
     <script src="./src/scripts/index.js"></script>
     <script src="./src/scripts/faq.js"></script>
     <script src="./src/scripts/toasty.js"></script>
@@ -2390,5 +2400,6 @@
     <script src="./src/scripts/channelsCarousel.js"></script>
     <script src="./src//scripts/headerCarousel.js"></script>
     <script src="./src/scripts/stremingCarousel.js"></script>
+
   </body>
 </html>
