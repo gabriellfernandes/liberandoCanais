@@ -7,8 +7,8 @@ const openModalBtn6 = document.querySelector("#openModalBtn6");
 const openModalBtn7 = document.querySelector("#openModalBtn7");
 const openModalBtn8 = document.querySelector("#openModalBtn8");
 const openModalBtn9 = document.querySelector("#openModalBtn9");
-const openModalBtn10 = document.querySelector("#openModalBtn8");
-const openModalBtn11 = document.querySelector("#openModalBtn9");
+const openModalBtn10 = document.querySelector("#openModalBtn10");
+const openModalBtn11 = document.querySelector("#openModalBtn11");
 
 const modal = document.querySelector("#myModal");
 const modal2 = document.querySelector("#myModal2");
