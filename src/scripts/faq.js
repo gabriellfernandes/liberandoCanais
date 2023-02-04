@@ -3,29 +3,29 @@ const createFaqItem = () => {
 
   const query = [
     {
-      title: "O que é?",
+      title: "Como funciona para acessar a área de membros?",
       description:
-        "É um novo método de transmissão de sinais televisivos. Assim como o VOIP (Voz sobre IP), usa o protocolo IP Internet Protocol como meio de transporte do conteúdo.",
+        "Após a aprovação do seu pagamento, você receberá os dados de acesso automaticamente no e-mail cadastrado no ato da compra. Por isso, é importante que você cadastre um e-mail válido.",
     },
     {
-      title: "Posso testar antes de assinar?",
+      title: "Não tenho facilidade com tecnologia",
       description:
-        "Possuímos planos mensais, onde você pode renovar livremente. Assim como também possuímos planos mais longos como os anuais com grandes descontos, o poder de escolha é seu.",
+        "Fique tranquilo. O portal é fácil de usar. Em último caso, se houver dúvidas, você poderá pedir a ajuda de algum conhecido ou algum familiar. Mas é extremamente fácil e intuitivo usar a área de membros.",
     },
     {
-      title: "Como funciona as renovações?",
+      title: "Qual a garantia do produto?",
       description:
-        "Nossas assinaturas não possuem taxas, multas ou fidelidades, podendo ser cancelado a qualquer momento.",
+        "Se não conseguir fazer o funcionamento, falha de sinal ou travas nós garantimos o reembolso.",
     },
     {
-      title: "Posso assistir em mais de uma tela?",
+      title: "Como vou receber os canais?",
       description:
-        "Você pode configurar seu login em diversos dispositivos, porém não poderá ver simultâneamente em duas telas sem adquirir o ponto extra. Adquira o ponto extra para ver em mais de uma tela ao mesmo tempo. Se ainda restar alguma dúvida entre em contato conosco, ficaremos feliz em esclarecer toda e qualquer dúvida",
+        "A lista sincroniza sempre automaticamente pelos nossos servidores.",
     },
     {
-      title: "É necessário uma Tv Box?",
+      title: "Se testar e não gostar?",
       description:
-        "O uso de uma box é necessário se sua televisão não ser uma SmartTv.",
+        "Tem 14 dias de garantia incondicional, ou seja, se você receber e, por algum motivo, não gostar devolvemos todo o seu dinheiro.",
     },
   ];
 
